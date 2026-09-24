@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.pfx
+*api*key*
+*token*
+credentials.json
+**/configurations/*.xml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# Local / host-only
+config.py
+backups/
+*.log
