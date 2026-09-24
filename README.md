@@ -1,36 +1,39 @@
 # Jellyfin web customizations
 
-Portable **CSS** and **JavaScript Injector** snippets for the [Jellyfin](https://jellyfin.org/) web client.
+CSS and JavaScript Injector snippets for the [Jellyfin](https://jellyfin.org/) web client.
 
-Tested on **Jellyfin 10.11.x**. Other versions may need selector tweaks.
+Tested on Jellyfin 10.11.x. Older or newer builds may need small selector changes.
 
-## How this repo is organized
+## Layout
 
-Each customization lives in its own folder with:
+Each customization is its own folder: CSS and/or JS to paste, plus a README.
 
-- The CSS and/or JS to paste
-- A README with install steps
+Add one customization per pull request.
 
-Customizations are added one at a time via pull requests.
+## Customizations
+
+| Folder | What |
+| --- | --- |
+| [missing-episode-badge/](missing-episode-badge/) | Missing-episode count on TV series/season posters (JS Injector + CSS) |
 
 ## Requirements
 
 | Need | Used for |
 | --- | --- |
 | Jellyfin 10.11+ web | All snippets |
-| [Custom CSS](https://jellyfin.org/docs/general/clients/css-customization/) / `branding.xml` | Style-only and badge styles |
-| [JavaScript Injector](https://github.com/IAmParadox27/jellyfin-plugin-javascript-injector) | Behavior patches |
+| [Custom CSS](https://jellyfin.org/docs/general/clients/css-customization/) or `branding.xml` | Styles |
+| [JavaScript Injector](https://github.com/IAmParadox27/jellyfin-plugin-javascript-injector) | Behavior |
 
 ### Branding note (10.11)
 
-Dashboard → Branding → Custom CSS often loads empty. **Do not Save an empty box** — it can clear `branding.xml`. Paste into `branding.xml` `<CustomCss>` (or use your host’s apply script) when the UI is unreliable.
+Dashboard → Branding → Custom CSS often loads empty. Do not Save an empty box; that can wipe `branding.xml`. Edit `branding.xml` `<CustomCss>` on disk if the Dashboard box is empty.
 
 ## Contributing
 
-1. One customization per PR (one folder + README row).
-2. No secrets, API keys, or host-specific paths in snippets.
-3. Keep READMEs installable on a stock Jellyfin + Injector setup.
+1. One customization per PR (folder + root README table row).
+2. No secrets, API keys, or host-only paths.
+3. READMEs should work on stock Jellyfin + Injector (no local tooling assumed).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
