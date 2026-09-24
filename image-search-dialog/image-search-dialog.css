@@ -1,0 +1,102 @@
+/*
+ * Wider art pickers. Jellyfin 10.11 opens these as dialog size=small.
+ *   - Edit images → Search (.availableImagesList) - always wide
+ *   - Identify → Search results only (.identificationSearchResults without .hide)
+ * Install: see image-search-dialog/README.md
+ */
+
+/* Edit images → Search: always widen when that grid is present */
+.dialog:has(.availableImagesList) {
+  width: 96vw !important;
+  max-width: 96vw !important;
+  height: 94vh !important;
+  max-height: 94vh !important;
+}
+
+.dialog:has(.availableImagesList) .formDialog {
+  height: 100%;
+  max-height: inherit;
+}
+
+.dialog:has(.availableImagesList) .formDialogContent.smoothScrollY {
+  max-height: calc(94vh - 3.5rem);
+}
+
+.dialog:has(.availableImagesList) .dialogContentInner {
+  max-width: none;
+  padding-bottom: 6em;
+}
+
+/*
+ * Identify: keep the first form (name / year / IMDb / …) stock-sized.
+ * Widen only after Search shows results (panel loses .hide).
+ */
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) {
+  width: 96vw !important;
+  max-width: 96vw !important;
+  height: 94vh !important;
+  max-height: 94vh !important;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)).formDialog {
+  height: 100%;
+  max-height: inherit;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .formDialogContent.smoothScrollY {
+  max-height: calc(94vh - 3.5rem);
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .dialogContentInner {
+  max-width: none;
+  padding-bottom: 6em;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .popupIdentifyForm,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identifyOptionsForm {
+  max-width: none;
+  width: 100%;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResults {
+  max-width: none;
+}
+
+/* Portrait / primary posters */
+.dialog:has(.availableImagesList) .availableImagesList > .portraitCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.portraitCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .portraitCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.portraitCard {
+  width: 20% !important;
+  min-width: 130px;
+  max-width: 320px;
+}
+
+/* Backdrop / thumb results */
+.dialog:has(.availableImagesList) .availableImagesList > .backdropCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.backdropCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .backdropCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.backdropCard {
+  width: 46% !important;
+  min-width: 280px;
+  max-width: 720px;
+}
+
+.dialog:has(.availableImagesList) .availableImagesList > .squareCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.squareCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .squareCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.squareCard {
+  width: 18% !important;
+  min-width: 120px;
+  max-width: 280px;
+}
+
+@media (min-width: 1100px) {
+  .dialog:has(.availableImagesList) .availableImagesList > .portraitCard,
+  .dialog:has(.availableImagesList) .availableImagesList > button.portraitCard,
+  .dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .portraitCard,
+  .dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.portraitCard {
+    width: 16.6666666667% !important;
+    max-width: 360px;
+  }
+}
