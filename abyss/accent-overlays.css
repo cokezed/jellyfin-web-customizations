@@ -1,0 +1,83 @@
+/*
+ * Extra accent styling on top of Abyss (home rows, MBE hero, detail pages).
+ * Expects --abyss-accent and --abyss-glass-tint from a palette block in Custom CSS.
+ */
+
+:root {
+  --abyss-rating-star: 255, 193, 7;
+}
+
+/* Home rows: colored section headers */
+.homeSectionsContainer .sectionTitle,
+#favoritesTab .sectionTitle {
+  color: rgb(var(--abyss-accent)) !important;
+}
+.homeSectionsContainer .sectionTitleTextButton > .material-icons {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}
+.homeSectionsContainer .sectionTitleTextButton:not(.padded-left) {
+  background: rgba(var(--abyss-accent), 0.1);
+  border: 1px solid rgba(var(--abyss-accent), 0.22);
+}
+.homeSectionsContainer .sectionTitleTextButton:hover {
+  color: inherit !important;
+  background: rgba(var(--abyss-accent), 0.18);
+}
+.homeSectionsContainer .sectionTitleTextButton:hover .sectionTitle {
+  color: rgb(var(--abyss-accent)) !important;
+}
+
+/* MBE hero metadata pills */
+#slides-container #slide-counter,
+#slides-container .star-rating-container,
+#slides-container .critic-rating,
+#slides-container .age-rating,
+#slides-container .runTime,
+#slides-container .date {
+  background: rgba(var(--abyss-glass-tint), 0.82) !important;
+  border-color: rgba(var(--abyss-accent), 0.35) !important;
+  color: rgba(var(--abyss-accent), 0.95) !important;
+}
+#slides-container .genre {
+  color: rgba(var(--abyss-accent), 0.75) !important;
+  opacity: 1 !important;
+}
+#slides-container .star-rating-container .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+
+/* Detail pages (movie / series / season / episode) */
+.ratingbutton-icon-withrating {
+  color: rgb(var(--abyss-accent)) !important;
+}
+#itemDetailPage .starRatingContainer {
+  color: rgba(var(--abyss-accent), 0.95) !important;
+}
+#itemDetailPage .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+#itemDetailPage .parentName,
+#itemDetailPage .parentNameLast,
+#itemDetailPage .button-link {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}
+#itemDetailPage .mediaInfoItem:has(.starIcon),
+#itemDetailPage .mediaInfoOfficialRating {
+  color: rgba(var(--abyss-accent), 0.92) !important;
+}
+#itemDetailPage .mediaInfoItem:has(.starIcon) .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+#itemDetailPage .btnPlay {
+  background: rgb(var(--abyss-accent)) !important;
+  color: #121212 !important;
+  border: 1px solid rgba(var(--abyss-accent), 0.45) !important;
+}
+#itemDetailPage .btnPlay:hover {
+  background: rgba(var(--abyss-accent), 0.92) !important;
+  color: #121212 !important;
+  box-shadow: 0 0 18px rgba(var(--abyss-accent), 0.35) !important;
+}
+#itemDetailPage .detail-clamp-text .button-link {
+  color: rgba(var(--abyss-accent), 0.85) !important;
+}

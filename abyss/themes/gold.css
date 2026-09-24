@@ -1,0 +1,14 @@
+/* Abyss palette: gold (Soft gold) */
+:root {
+  --abyss-accent: 220, 190, 130;
+  --abyss-accent-channel: 220 190 130;
+  --abyss-glass-tint: 52, 46, 38;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(255, 220, 160);
+  --jf-palette-secondary-mainChannel: 255 220 160;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

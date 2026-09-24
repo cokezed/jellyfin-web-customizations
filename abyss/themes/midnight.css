@@ -1,0 +1,14 @@
+/* Abyss palette: midnight (Royal purple) */
+:root {
+  --abyss-accent: 142, 96, 214;
+  --abyss-accent-channel: 142 96 214;
+  --abyss-glass-tint: 36, 30, 56;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(178, 138, 235);
+  --jf-palette-secondary-mainChannel: 178 138 235;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

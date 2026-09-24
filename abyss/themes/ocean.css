@@ -1,0 +1,14 @@
+/* Abyss palette: ocean (Ocean blue) */
+:root {
+  --abyss-accent: 100, 165, 210;
+  --abyss-accent-channel: 100 165 210;
+  --abyss-glass-tint: 32, 42, 55;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(130, 200, 255);
+  --jf-palette-secondary-mainChannel: 130 200 255;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

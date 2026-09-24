@@ -1,0 +1,255 @@
+@import url("https://cdn.jsdelivr.net/gh/Druidblack/jellyfin-icon-metadata@main/public-icon.css");
+@import url("https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css");
+@import url("https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/styles/abyss-mbe.css");
+
+/* Abyss palette: rose (Rose orchid) */
+:root {
+  --abyss-accent: 215, 100, 190;
+  --abyss-accent-channel: 215 100 190;
+  --abyss-glass-tint: 50, 36, 58;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(190, 120, 255);
+  --jf-palette-secondary-mainChannel: 190 120 255;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}
+
+:root {
+  --abyss-rating-star: 255, 193, 7;
+}
+
+/* Home rows: colored section headers */
+.homeSectionsContainer .sectionTitle,
+#favoritesTab .sectionTitle {
+  color: rgb(var(--abyss-accent)) !important;
+}
+.homeSectionsContainer .sectionTitleTextButton > .material-icons {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}
+.homeSectionsContainer .sectionTitleTextButton:not(.padded-left) {
+  background: rgba(var(--abyss-accent), 0.1);
+  border: 1px solid rgba(var(--abyss-accent), 0.22);
+}
+.homeSectionsContainer .sectionTitleTextButton:hover {
+  color: inherit !important;
+  background: rgba(var(--abyss-accent), 0.18);
+}
+.homeSectionsContainer .sectionTitleTextButton:hover .sectionTitle {
+  color: rgb(var(--abyss-accent)) !important;
+}
+
+/* MBE hero metadata pills */
+#slides-container #slide-counter,
+#slides-container .star-rating-container,
+#slides-container .critic-rating,
+#slides-container .age-rating,
+#slides-container .runTime,
+#slides-container .date {
+  background: rgba(var(--abyss-glass-tint), 0.82) !important;
+  border-color: rgba(var(--abyss-accent), 0.35) !important;
+  color: rgba(var(--abyss-accent), 0.95) !important;
+}
+#slides-container .genre {
+  color: rgba(var(--abyss-accent), 0.75) !important;
+  opacity: 1 !important;
+}
+#slides-container .star-rating-container .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+
+/* Detail pages (movie / series / season / episode) */
+.ratingbutton-icon-withrating {
+  color: rgb(var(--abyss-accent)) !important;
+}
+#itemDetailPage .starRatingContainer {
+  color: rgba(var(--abyss-accent), 0.95) !important;
+}
+#itemDetailPage .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+#itemDetailPage .parentName,
+#itemDetailPage .parentNameLast,
+#itemDetailPage .button-link {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}
+#itemDetailPage .mediaInfoItem:has(.starIcon),
+#itemDetailPage .mediaInfoOfficialRating {
+  color: rgba(var(--abyss-accent), 0.92) !important;
+}
+#itemDetailPage .mediaInfoItem:has(.starIcon) .starIcon {
+  color: rgb(var(--abyss-rating-star)) !important;
+}
+#itemDetailPage .btnPlay {
+  background: rgb(var(--abyss-accent)) !important;
+  color: #121212 !important;
+  border: 1px solid rgba(var(--abyss-accent), 0.45) !important;
+}
+#itemDetailPage .btnPlay:hover {
+  background: rgba(var(--abyss-accent), 0.92) !important;
+  color: #121212 !important;
+  box-shadow: 0 0 18px rgba(var(--abyss-accent), 0.35) !important;
+}
+#itemDetailPage .detail-clamp-text .button-link {
+  color: rgba(var(--abyss-accent), 0.85) !important;
+}
+
+@media (min-width: 100em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+@media (min-width: 120em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+@media (min-width: 131.25em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+
+.itemsContainer:has(> .portraitCard[data-type="BoxSet"]) .cardText,
+.itemsContainer:has(> .portraitCard[data-type="BoxSet"]) .cardText > .textActionButton {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+  min-height: 2.6em;
+}
+
+.cardImageContainer .cardIndicators:has(.jf-missing-ep-badge) {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2em;
+}
+
+/* Theme primary; do not use rgb(var(--x, r, g, b)) (invalid fallback). */
+.cardImageContainer .jf-missing-ep-badge.indicator.countIndicator {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05em;
+  width: auto;
+  min-width: 2em;
+  height: 2em;
+  padding: 0 0.35em;
+  margin: 0;
+  pointer-events: none;
+  font-size: 88%;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 1em;
+  color: #fff !important;
+  background-color: var(--jf-palette-primary-main, rgb(215, 100, 190)) !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.cardImageContainer .jf-missing-ep-badge-icon.material-icons {
+  font-size: 1.15em;
+  width: auto;
+  height: auto;
+  line-height: 1;
+}
+
+.cardImageContainer .jf-missing-ep-badge-count {
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* Wider art pickers: Edit images → Search; Identify only after Search results */
+.dialog:has(.availableImagesList) {
+  width: 96vw !important;
+  max-width: 96vw !important;
+  height: 94vh !important;
+  max-height: 94vh !important;
+}
+
+.dialog:has(.availableImagesList) .formDialog {
+  height: 100%;
+  max-height: inherit;
+}
+
+.dialog:has(.availableImagesList) .formDialogContent.smoothScrollY {
+  max-height: calc(94vh - 3.5rem);
+}
+
+.dialog:has(.availableImagesList) .dialogContentInner {
+  max-width: none;
+  padding-bottom: 6em;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) {
+  width: 96vw !important;
+  max-width: 96vw !important;
+  height: 94vh !important;
+  max-height: 94vh !important;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)).formDialog {
+  height: 100%;
+  max-height: inherit;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .formDialogContent.smoothScrollY {
+  max-height: calc(94vh - 3.5rem);
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .dialogContentInner {
+  max-width: none;
+  padding-bottom: 6em;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .popupIdentifyForm,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identifyOptionsForm {
+  max-width: none;
+  width: 100%;
+}
+
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResults {
+  max-width: none;
+}
+
+.dialog:has(.availableImagesList) .availableImagesList > .portraitCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.portraitCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .portraitCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.portraitCard {
+  width: 20% !important;
+  min-width: 130px;
+  max-width: 320px;
+}
+
+.dialog:has(.availableImagesList) .availableImagesList > .backdropCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.backdropCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .backdropCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.backdropCard {
+  width: 46% !important;
+  min-width: 280px;
+  max-width: 720px;
+}
+
+.dialog:has(.availableImagesList) .availableImagesList > .squareCard,
+.dialog:has(.availableImagesList) .availableImagesList > button.squareCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .squareCard,
+.dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.squareCard {
+  width: 18% !important;
+  min-width: 120px;
+  max-width: 280px;
+}
+
+@media (min-width: 1100px) {
+  .dialog:has(.availableImagesList) .availableImagesList > .portraitCard,
+  .dialog:has(.availableImagesList) .availableImagesList > button.portraitCard,
+  .dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > .portraitCard,
+  .dialog.identifyDialog:has(.identificationSearchResults:not(.hide)) .identificationSearchResultList > button.portraitCard {
+    width: 16.6666666667% !important;
+    max-width: 360px;
+  }
+}
