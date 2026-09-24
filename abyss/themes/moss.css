@@ -1,0 +1,14 @@
+/* Abyss palette: moss (Moss) */
+:root {
+  --abyss-accent: 135, 188, 118;
+  --abyss-accent-channel: 135 188 118;
+  --abyss-glass-tint: 38, 50, 36;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(155, 205, 125);
+  --jf-palette-secondary-mainChannel: 155 205 125;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

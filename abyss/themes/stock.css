@@ -1,0 +1,14 @@
+/* Abyss palette: stock (Abyss stock) */
+:root {
+  --abyss-accent: 245, 245, 247;
+  --abyss-accent-channel: 245 245 247;
+  --abyss-glass-tint: 42, 42, 42;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(245, 245, 247);
+  --jf-palette-secondary-mainChannel: 245 245 247;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

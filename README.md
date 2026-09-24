@@ -22,6 +22,7 @@ Add one customization per pull request.
 | [header-buttons/](header-buttons/) | Show Home and Cast header buttons (CSS) |
 | [home-link/](home-link/) | Home header control as a real `#/home` link (JS Injector) |
 | [collection-picker-speed/](collection-picker-speed/) | Faster Add to Collection dropdown (JS Injector) |
+| [abyss/](abyss/) | Abyss theme imports, palettes, and accent overlays (CSS) |
 
 ## Requirements
 

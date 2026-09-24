@@ -1,0 +1,14 @@
+/* Abyss palette: honey (Honey) */
+:root {
+  --abyss-accent: 215, 175, 110;
+  --abyss-accent-channel: 215 175 110;
+  --abyss-glass-tint: 50, 44, 34;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(240, 200, 140);
+  --jf-palette-secondary-mainChannel: 240 200 140;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}
