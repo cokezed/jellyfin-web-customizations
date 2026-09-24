@@ -20,6 +20,7 @@ Add one customization per pull request.
 | [image-search-dialog/](image-search-dialog/) | Larger Edit images / Identify art search dialogs (CSS) |
 | [identify-overview/](identify-overview/) | Show overview text in Identify search results (JS Injector + CSS) |
 | [header-buttons/](header-buttons/) | Show Home and Cast header buttons (CSS) |
+| [home-link/](home-link/) | Home header control as a real `#/home` link (JS Injector) |
 
 ## Requirements
 
