@@ -8,7 +8,7 @@ Stock jellyfin-web uses a button with `navigate("home")` and no `href`, so the b
 
 ## Fix
 
-Replaces that button with an `<a href="…/web/…#/home">` that keeps the same classes.
+Replaces that button with an `<a href=".../web/...#/home">` that keeps the same classes.
 
 - Normal left-click: same SPA home navigation as stock
 - Ctrl/Cmd/middle-click or context menu: real `#/home` URL

@@ -4,7 +4,7 @@
  * Stock jellyfin-web uses <button class="headerHomeButton"> + navigate("home"),
  * so middle-click / Ctrl+click / "Open in new tab" cannot work.
  *
- * Replaces that button with an <a href="…#/home"> that keeps the same classes
+ * Replaces that button with an <a href="...#/home"> that keeps the same classes
  * and SPA-navigates on plain left-click.
  *
  * Visibility: stock toggles `.hide` on its original button reference after render.
