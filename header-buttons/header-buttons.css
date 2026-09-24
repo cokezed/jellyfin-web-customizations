@@ -1,0 +1,82 @@
+/*
+ * Header buttons - theme stock + File Transformation injections
+ *
+ * - Stock SyncPlay / cast / search / etc. use muted gray material icons
+ * - Moonfin sets .headerMoonfinButton { opacity: .6 }
+ * - Media Bar Enhanced reuses .headerSyncButton.syncButton AND injects
+ *   logo_SW_MINIMAL.svg → looks like two icons stacked. Hide SVG, use one Material icon.
+ */
+
+/* Accent-tint all header material icons */
+.skinHeader .headerButton .material-icons,
+.skinHeader .headerButtonRight .material-icons,
+.skinHeader .headerButtonLeft .material-icons {
+  color: rgba(var(--abyss-accent), 0.88) !important;
+  opacity: 1 !important;
+}
+.skinHeader .headerButton:hover .material-icons,
+.skinHeader .headerButton:focus .material-icons,
+.skinHeader .headerButton:focus-visible .material-icons {
+  color: rgb(var(--abyss-accent)) !important;
+}
+
+/* Moonfin header chip (File Transformation / Moonbase inject) */
+.headerMoonfinButton {
+  opacity: 1 !important;
+  filter: none !important;
+}
+.headerMoonfinButton img {
+  width: 22px !important;
+  height: 22px !important;
+  opacity: 0.92 !important;
+  filter: drop-shadow(0 0 0.5px rgba(var(--abyss-accent), 0.55));
+}
+.headerMoonfinButton:hover img,
+.headerMoonfinButton:focus img {
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 2px rgba(var(--abyss-accent), 0.85));
+}
+
+/*
+ * Media Bar Settings - replace stacked SVG/logo with a single Material icon.
+ * Ligature: tune. Alternatives: view_carousel | slideshow | movie_filter
+ */
+.media-bar-settings-button {
+  position: relative !important;
+  color: rgba(var(--abyss-accent), 0.88) !important;
+  opacity: 1 !important;
+}
+.media-bar-settings-button img,
+.media-bar-settings-button svg {
+  display: none !important;
+}
+.media-bar-settings-button::before {
+  font-family: "Material Icons Outlined", "Material Icons", sans-serif;
+  content: "tune";
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(var(--abyss-accent), 0.88);
+  vertical-align: middle;
+}
+.media-bar-settings-button:hover::before,
+.media-bar-settings-button:focus::before {
+  color: rgb(var(--abyss-accent));
+}
+
+/* Same treatment if Seasonal Settings uses a parallel header button */
+.seasonal-settings-button img,
+.seasonal-settings-button svg {
+  display: none !important;
+}
+.seasonal-settings-button::before {
+  font-family: "Material Icons Outlined", "Material Icons", sans-serif;
+  content: "celebration";
+  font-size: 1.5rem;
+  line-height: 1;
+  color: rgba(var(--abyss-accent), 0.88);
+}
