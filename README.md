@@ -19,6 +19,7 @@ Add one customization per pull request.
 | [collections-poster-grid/](collections-poster-grid/) | Collections grid columns/titles + larger posters on collection detail (CSS) |
 | [image-search-dialog/](image-search-dialog/) | Larger Edit images / Identify art search dialogs (CSS) |
 | [identify-overview/](identify-overview/) | Show overview text in Identify search results (JS Injector + CSS) |
+| [header-buttons/](header-buttons/) | Show Home and Cast header buttons (CSS) |
 
 ## Requirements
 
