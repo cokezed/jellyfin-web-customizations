@@ -15,6 +15,7 @@ Add one customization per pull request.
 | Folder | What |
 | --- | --- |
 | [missing-episode-badge/](missing-episode-badge/) | Missing-episode count on TV series/season posters (JS Injector + CSS) |
+| [foreign-language-badge/](foreign-language-badge/) | Non-English primary audio ISO code on movie/episode posters (JS Injector + CSS) |
 
 ## Requirements
 
