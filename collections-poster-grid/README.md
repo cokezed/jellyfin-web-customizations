@@ -5,7 +5,7 @@ CSS for Collections (BoxSet) layouts. Needs `:has()`.
 ## What it does
 
 1. **Collections library grid:** about 7 cards per row on wide screens (stock goes 8 to 10), with 2-line titles.
-2. **Collection detail page:** child movie and series posters enlarged (~18% width, min ~150px) with 2-line titles. Stock still assumes many columns, so sparse collections look tiny without this.
+2. **Collection detail page:** child movie and series posters enlarged (~18% width, min ~150px) with 2-line titles.
 
 ## Screenshots
 
@@ -15,7 +15,7 @@ CSS for Collections (BoxSet) layouts. Needs `:has()`.
 | --- | --- |
 | ![Before grid](images/before-collection-grid.png) | ![After grid](images/after-collection-grid.png) |
 
-### Collection detail (sparse)
+### Collection detail
 
 | Before | After |
 | --- | --- |
