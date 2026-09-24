@@ -1,0 +1,84 @@
+/*
+ * Collections poster grid
+ *
+ * Paste into branding.xml <CustomCss> (after @import lines) or Dashboard → Branding.
+ * See docs/JELLYFIN_UI.md § "Collections poster grid" for breakpoints, scoping, and variants.
+ */
+
+/* 7 columns on wide screens (stock Jellyfin goes 8 → 9 → 10) */
+@media (min-width: 100em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+@media (min-width: 120em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+@media (min-width: 131.25em) {
+  .itemsContainer:has(> .portraitCard[data-type="BoxSet"]) > .portraitCard {
+    width: 14.2857142857%;
+  }
+}
+
+/* 2-line titles instead of single-line ellipsis */
+.itemsContainer:has(> .portraitCard[data-type="BoxSet"]) .cardText,
+.itemsContainer:has(> .portraitCard[data-type="BoxSet"]) .cardText > .textActionButton {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+  min-height: 2.6em;
+}
+
+/*
+ * Collection (BoxSet) detail page - child movie/series posters are often tiny
+ * when only a few items exist (layout still assumes many columns). Enlarge
+ * cards and allow 2-line titles so names are readable.
+ */
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Movie"],
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Series"],
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Movie"],
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Series"],
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Movie"],
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Series"] {
+  width: 18% !important;
+  min-width: 150px;
+  max-width: 220px;
+  flex-grow: 0;
+}
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Movie"] .cardText,
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Movie"] .cardText > .textActionButton,
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Series"] .cardText,
+#itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Series"] .cardText > .textActionButton,
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Movie"] .cardText,
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Movie"] .cardText > .textActionButton,
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Series"] .cardText,
+#itemDetailPage .childrenItemsContainer .portraitCard[data-type="Series"] .cardText > .textActionButton,
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Movie"] .cardText,
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Movie"] .cardText > .textActionButton,
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Series"] .cardText,
+#itemDetailPage .itemsContainer > .card.portraitCard[data-type="Series"] .cardText > .textActionButton {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+  min-height: 2.6em;
+}
+@media (max-width: 50em) {
+  #itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Movie"],
+  #itemDetailPage .verticalSection .itemsContainer > .portraitCard[data-type="Series"],
+  #itemDetailPage .childrenItemsContainer .portraitCard[data-type="Movie"],
+  #itemDetailPage .childrenItemsContainer .portraitCard[data-type="Series"],
+  #itemDetailPage .itemsContainer > .card.portraitCard[data-type="Movie"],
+  #itemDetailPage .itemsContainer > .card.portraitCard[data-type="Series"] {
+    width: 42% !important;
+    min-width: 120px;
+    max-width: none;
+  }
+}
