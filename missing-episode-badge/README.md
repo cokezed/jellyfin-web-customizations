@@ -2,7 +2,7 @@
 
 Pink `playlist_remove` icon plus count on TV **series** and **season** posters (under the unwatched badge). Uses Jellyfin metadata only. Override the CSS color to match your theme.
 
-Inspired by [this Reddit thread](https://www.reddit.com/r/JellyfinCommunity/comments/1t1zxb5/).
+Inspired by [this Reddit thread](https://www.reddit.com/r/JellyfinCommunity/comments/1t1zxb5/). This version uses the logged-in session token from `localStorage` instead of a hardcoded API key.
 
 ## Screenshots
 
