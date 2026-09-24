@@ -18,6 +18,7 @@ Add one customization per pull request.
 | [foreign-language-badge/](foreign-language-badge/) | Non-English primary audio ISO code on movie/episode posters (JS Injector + CSS) |
 | [collections-poster-grid/](collections-poster-grid/) | Collections grid columns/titles + larger posters on collection detail (CSS) |
 | [image-search-dialog/](image-search-dialog/) | Larger Edit images / Identify art search dialogs (CSS) |
+| [identify-overview/](identify-overview/) | Show overview text in Identify search results (JS Injector + CSS) |
 
 ## Requirements
 

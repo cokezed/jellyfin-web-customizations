@@ -1,0 +1,67 @@
+/*
+ * Identify dialog - overview on search cards + confirm panel extras.
+ */
+
+.identifyDialog .jf-identify-overview {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-align: left;
+  font-size: 0.78em;
+  font-weight: 400;
+  line-height: 1.35;
+  padding: 0.25em 0.45em 0.55em;
+  margin: 0;
+  max-width: 100%;
+  opacity: 0.92;
+  color: inherit;
+}
+
+.identifyDialog .identificationSearchResultList > .portraitCard .cardBox,
+.identifyDialog .identificationSearchResultList > button.portraitCard .cardBox {
+  min-height: 0;
+}
+
+/* Confirm screen after picking a match */
+.identifyDialog .selectedSearchResult {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.identifyDialog .jf-identify-confirm-extra {
+  position: relative;
+  z-index: 5;
+  margin-top: 1em;
+  padding: 0 0.25em;
+  pointer-events: auto;
+}
+
+.identifyDialog .jf-identify-confirm-overview {
+  margin: 0 0 0.85em;
+  font-size: 0.95em;
+  line-height: 1.45;
+  white-space: normal;
+  opacity: 0.95;
+}
+
+.identifyDialog .jf-identify-confirm-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em 1.25em;
+  pointer-events: auto;
+}
+
+.identifyDialog .jf-identify-confirm-link {
+  position: relative;
+  z-index: 6;
+  color: rgb(var(--abyss-accent, 215, 100, 190)) !important;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.95em;
+  cursor: pointer;
+  pointer-events: auto !important;
+}
