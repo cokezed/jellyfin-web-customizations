@@ -14,6 +14,8 @@ CSS for Jellyfin web header icons (SyncPlay, cast, search, Moonfin, Media Bar Se
 | --- | --- |
 | ![Before](images/before.png) | ![After](images/after.png) |
 
+**Note:** The home backdrop differs between the two shots (different MBE backgrounds when captured). This CSS does not change the background image; only header icon styling.
+
 ## Install
 
 Append `header-buttons.css` to Custom CSS (after your palette / Abyss imports).
