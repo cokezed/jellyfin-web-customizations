@@ -1,0 +1,46 @@
+/*
+ * Missing-episode badge: pink pill, playlist_remove icon + count.
+ * Stacked under unwatched in .cardIndicators (top-right column).
+ */
+
+.cardImageContainer .cardIndicators:has(.jf-missing-ep-badge) {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2em;
+}
+
+.cardImageContainer .jf-missing-ep-badge.indicator.countIndicator {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05em;
+  width: auto;
+  min-width: 2em;
+  height: 2em;
+  padding: 0 0.35em;
+  margin: 0;
+  pointer-events: none;
+  font-size: 88%;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 1em;
+  color: #fff !important;
+  /* Theme primary; rgb fallback is Abyss rose. Stock JF: use var(--jf-palette-primary-main) only. */
+  /* Custom accent: set the var or change rgb(...). Do not use rgb(var(--x, r, g, b)). */
+  background-color: var(--jf-palette-primary-main, rgb(215, 100, 190)) !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.cardImageContainer .jf-missing-ep-badge-icon.material-icons {
+  font-size: 1.15em;
+  width: auto;
+  height: auto;
+  line-height: 1;
+}
+
+.cardImageContainer .jf-missing-ep-badge-count {
+  font-size: inherit;
+  line-height: 1;
+}
