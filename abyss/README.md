@@ -19,6 +19,8 @@ Order:
 
 Picker: https://cokezed.github.io/jellyfin-abyss-theme-picker/
 
+Admin Dashboard (`#/dashboard`) does not load Branding Custom CSS on 10.11+. Use [dashboard-theme/](../dashboard-theme/) (JavaScript Injector) so that surface matches these accents.
+
 ## Screenshots
 
 | Home (MBE + theme accents) | Movie detail |

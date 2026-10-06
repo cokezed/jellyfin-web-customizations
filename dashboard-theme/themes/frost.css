@@ -1,0 +1,14 @@
+/* Abyss palette: frost (Frost) */
+:root {
+  --abyss-accent: 165, 195, 220;
+  --abyss-accent-channel: 165 195 220;
+  --abyss-glass-tint: 40, 44, 52;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(190, 210, 235);
+  --jf-palette-secondary-mainChannel: 190 210 235;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

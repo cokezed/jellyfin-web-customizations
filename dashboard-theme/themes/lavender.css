@@ -1,0 +1,14 @@
+/* Abyss palette: lavender (Lilac) */
+:root {
+  --abyss-accent: 200, 170, 225;
+  --abyss-accent-channel: 200 170 225;
+  --abyss-glass-tint: 48, 42, 52;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(220, 195, 240);
+  --jf-palette-secondary-mainChannel: 220 195 240;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

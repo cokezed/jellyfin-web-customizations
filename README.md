@@ -23,6 +23,7 @@ Add one customization per pull request.
 | [home-link/](home-link/) | Home header control as a real `#/home` link (JS Injector) |
 | [collection-picker-speed/](collection-picker-speed/) | Faster Add to Collection dropdown (JS Injector) |
 | [collections-row/](collections-row/) | Collections a title belongs to, above More like this (JS Injector) |
+| [dashboard-theme/](dashboard-theme/) | Abyss-style accents on the admin Dashboard (JS Injector; Branding CSS is skipped there on 10.11+) |
 | [abyss/](abyss/) | Abyss theme imports, palettes, and accent overlays (CSS) |
 
 ## Requirements

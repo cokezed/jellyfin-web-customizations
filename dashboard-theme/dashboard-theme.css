@@ -1,0 +1,228 @@
+﻿/*
+ * Dashboard theme: rose
+ * Palette from abyss/themes/rose.css + dashboard-chrome.css
+ */
+/* Abyss palette: rose (Rose orchid) (default) */
+:root {
+  --abyss-accent: 215, 100, 190;
+  --abyss-accent-channel: 215 100 190;
+  --abyss-glass-tint: 50, 36, 58;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(190, 120, 255);
+  --jf-palette-secondary-mainChannel: 190 120 255;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}
+
+/* Admin dashboard chrome — uses --abyss-* from a palette (see themes/) */
+body.dashboardDocument {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-primary-dark: rgb(var(--abyss-accent));
+  --jf-palette-primary-darkChannel: var(--abyss-accent-channel);
+  --jf-palette-primary-light: rgba(var(--abyss-accent), 0.72);
+  --jf-palette-primary-lightChannel: var(--abyss-accent-channel);
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}
+body.dashboardDocument .dashboard-appBar,
+body.dashboardDocument .MuiAppBar-root {
+  background-color: rgba(var(--abyss-glass-tint), 0.92) !important;
+  background-image: none !important;
+}
+body.dashboardDocument .MuiDrawer-paper {
+  background-color: rgba(var(--abyss-glass-tint), 0.98) !important;
+  border-right: 1px solid rgba(var(--abyss-accent), 0.14) !important;
+}
+body.dashboardDocument .MuiListItemButton-root.Mui-selected,
+body.dashboardDocument .MuiListItemButton-root.Mui-selected:hover {
+  background-color: rgba(var(--abyss-accent), 0.22) !important;
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiListItemButton-root.Mui-selected .MuiListItemIcon-root,
+body.dashboardDocument .MuiListItemButton-root.Mui-selected .MuiSvgIcon-root {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiListItemButton-root:hover {
+  background-color: rgba(var(--abyss-accent), 0.1) !important;
+}
+body.dashboardDocument .MuiButton-containedPrimary,
+body.dashboardDocument .MuiButton-contained.MuiButton-colorPrimary {
+  background-color: rgb(var(--abyss-accent)) !important;
+  color: #121212 !important;
+}
+body.dashboardDocument .MuiButton-containedPrimary:hover,
+body.dashboardDocument .MuiButton-contained.MuiButton-colorPrimary:hover {
+  background-color: rgba(var(--abyss-accent), 0.88) !important;
+  box-shadow: 0 0 14px rgba(var(--abyss-accent), 0.35) !important;
+}
+body.dashboardDocument .MuiButton-outlinedPrimary,
+body.dashboardDocument .MuiButton-textPrimary,
+body.dashboardDocument .MuiLink-root,
+body.dashboardDocument a.MuiTypography-root {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiButton-outlinedPrimary {
+  border-color: rgba(var(--abyss-accent), 0.55) !important;
+}
+body.dashboardDocument .MuiSwitch-switchBase.Mui-checked {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  background-color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiCheckbox-root.Mui-checked,
+body.dashboardDocument .MuiRadio-root.Mui-checked,
+body.dashboardDocument .MuiSvgIcon-root.MuiSvgIcon-colorPrimary {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiTab-root.Mui-selected {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiTabs-indicator {
+  background-color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiCircularProgress-colorPrimary,
+body.dashboardDocument .MuiLinearProgress-barColorPrimary {
+  color: rgb(var(--abyss-accent)) !important;
+  background-color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiChip-colorPrimary {
+  background-color: rgba(var(--abyss-accent), 0.22) !important;
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiFilledInput-root.Mui-focused,
+body.dashboardDocument .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+body.dashboardDocument .MuiInput-underline:after {
+  border-color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiInputLabel-root.Mui-focused,
+body.dashboardDocument .MuiFormLabel-root.Mui-focused {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .MuiSlider-thumb,
+body.dashboardDocument .MuiSlider-track {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .button-submit,
+body.dashboardDocument .navMenuOption-selected,
+body.dashboardDocument .emby-checkbox:checked + span + .checkboxOutline,
+body.dashboardDocument .itemProgressBarForeground,
+body.dashboardDocument .progressring-spiner {
+  background-color: rgb(var(--abyss-accent)) !important;
+  border-color: rgb(var(--abyss-accent)) !important;
+  color: #121212 !important;
+}
+body.dashboardDocument .button-link,
+body.dashboardDocument .inputLabelFocused,
+body.dashboardDocument .selectLabelFocused,
+body.dashboardDocument .textareaLabelFocused,
+body.dashboardDocument .buttonActive {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .emby-input:focus,
+body.dashboardDocument .emby-textarea:focus,
+body.dashboardDocument .emby-select-withcolor:focus {
+  border-color: rgb(var(--abyss-accent)) !important;
+}
+
+/* App bar — user avatar + toolbar icon buttons */
+body.dashboardDocument .dashboard-appBar .MuiIconButton-root,
+body.dashboardDocument .MuiToolbar-root .MuiIconButton-root {
+  color: rgba(var(--abyss-accent), 0.88) !important;
+}
+body.dashboardDocument .dashboard-appBar .MuiIconButton-root:hover,
+body.dashboardDocument .MuiToolbar-root .MuiIconButton-root:hover {
+  color: rgb(var(--abyss-accent)) !important;
+  background-color: rgba(var(--abyss-accent), 0.12) !important;
+}
+body.dashboardDocument .MuiAvatar-root:not(:has(img)),
+body.dashboardDocument .MuiAvatar-colorDefault {
+  background-color: rgb(var(--abyss-accent)) !important;
+  color: #121212 !important;
+}
+
+/* Activity feed alert bells — stock JS inlines #00a4dc / #cc0000 */
+body.dashboardDocument .listItemIcon {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .listItemIcon[style*="#00a4dc"],
+body.dashboardDocument .listItemIcon[style*="#00A4DC"],
+body.dashboardDocument .listItemIcon[style*="rgb(0, 164, 220)"],
+body.dashboardDocument .listItemIcon[style*="rgb(0,164,220)"] {
+  color: rgb(var(--abyss-accent)) !important;
+  background-color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .listItemIcon[style*="#cc0000"],
+body.dashboardDocument .listItemIcon[style*="#CC0000"],
+body.dashboardDocument .listItemIcon[style*="#c00"] {
+  color: #cc0000 !important;
+  background-color: #cc0000 !important;
+}
+
+/* Server info — Web / server / build version values */
+body.dashboardDocument #webVersion,
+body.dashboardDocument #versionNumber,
+body.dashboardDocument #buildVersion,
+body.dashboardDocument #serverName,
+body.dashboardDocument .serverInfo > :nth-child(2n) {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument .serverInfo a,
+body.dashboardDocument .serverInfo .button-link {
+  color: rgb(var(--abyss-accent)) !important;
+}
+
+/* Catch leftover stock cyan on dashboard */
+body.dashboardDocument [style*="#00a4dc"],
+body.dashboardDocument [style*="#00A4DC"] {
+  color: rgb(var(--abyss-accent)) !important;
+}
+body.dashboardDocument [style*="background-color:#00a4dc"],
+body.dashboardDocument [style*="background-color: #00a4dc"],
+body.dashboardDocument [style*="background-color:#00A4DC"],
+body.dashboardDocument [style*="background:#00a4dc"],
+body.dashboardDocument [style*="background: #00a4dc"] {
+  background-color: rgb(var(--abyss-accent)) !important;
+  background: rgb(var(--abyss-accent)) !important;
+}
+
+/* Active Devices session cards — stock defaultCardBackground* are cyan */
+body.dashboardDocument .defaultCardBackground1 {
+  background-color: rgba(var(--abyss-glass-tint), 0.88) !important;
+}
+body.dashboardDocument .defaultCardBackground2 {
+  background-color: rgba(var(--abyss-glass-tint), 0.92) !important;
+}
+body.dashboardDocument .defaultCardBackground3 {
+  background-color: rgba(var(--abyss-glass-tint), 1) !important;
+}
+body.dashboardDocument .defaultCardBackground4 {
+  background-color: rgba(var(--abyss-accent), 0.18) !important;
+}
+body.dashboardDocument .defaultCardBackground5 {
+  background-color: rgba(var(--abyss-accent), 0.28) !important;
+}
+body.dashboardDocument .activeDevices .cardContent,
+body.dashboardDocument .activeDevices .sessionNowPlayingContent {
+  background-color: rgba(var(--abyss-glass-tint), 0.96) !important;
+}
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground1,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground2,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground3,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground4,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground5 {
+  background-image: linear-gradient(
+    155deg,
+    rgba(var(--abyss-accent), 0.22),
+    rgba(var(--abyss-glass-tint), 0.98) 55%
+  ) !important;
+}
+body.dashboardDocument .activeDevices .sessionCardButton,
+body.dashboardDocument .activeDevices .paper-icon-button-light {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}
+
