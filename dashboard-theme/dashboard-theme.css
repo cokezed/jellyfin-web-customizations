@@ -195,3 +195,39 @@ body.dashboardDocument [style*="background: #00a4dc"] {
   background-color: rgb(var(--abyss-accent)) !important;
   background: rgb(var(--abyss-accent)) !important;
 }
+
+/* Active Devices session cards — stock defaultCardBackground* are cyan blues */
+body.dashboardDocument .defaultCardBackground1 {
+  background-color: rgb(28, 20, 32) !important;
+}
+body.dashboardDocument .defaultCardBackground2 {
+  background-color: rgb(36, 26, 42) !important;
+}
+body.dashboardDocument .defaultCardBackground3 {
+  background-color: rgba(var(--abyss-glass-tint), 1) !important;
+}
+body.dashboardDocument .defaultCardBackground4 {
+  background-color: rgb(58, 42, 66) !important;
+}
+body.dashboardDocument .defaultCardBackground5 {
+  background-color: rgba(var(--abyss-accent), 0.28) !important;
+}
+body.dashboardDocument .activeDevices .cardContent,
+body.dashboardDocument .activeDevices .sessionNowPlayingContent {
+  background-color: rgba(var(--abyss-glass-tint), 0.96) !important;
+}
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground1,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground2,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground3,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground4,
+body.dashboardDocument .activeDevices .cardContent.defaultCardBackground5 {
+  background-image: linear-gradient(
+    155deg,
+    rgba(var(--abyss-accent), 0.22),
+    rgba(var(--abyss-glass-tint), 0.98) 55%
+  ) !important;
+}
+body.dashboardDocument .activeDevices .sessionCardButton,
+body.dashboardDocument .activeDevices .paper-icon-button-light {
+  color: rgba(var(--abyss-accent), 0.9) !important;
+}

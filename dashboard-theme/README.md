@@ -13,6 +13,7 @@ A JavaScript Injector script watches for `body.dashboardDocument` and injects CS
 - Maps MUI `--jf-palette-primary-*` to `--abyss-accent`
 - Tints AppBar, drawer, selected nav, buttons, switches, tabs, inputs
 - Restyles user avatar, toolbar icons, activity-feed alert bells, and server/web version text
+- Replaces cyan Active Devices session cards (`defaultCardBackground*`) with plum/rose glass
 
 Default palette is Abyss **rose orchid** (`215, 100, 190`). Change the `--abyss-*` RGB triples in `dashboard-theme.css` (and re-embed into the JS, or edit the CSS string inside `dashboard-theme.js`) to match another theme.
 
