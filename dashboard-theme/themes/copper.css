@@ -1,0 +1,14 @@
+/* Abyss palette: copper (Copper) */
+:root {
+  --abyss-accent: 210, 150, 110;
+  --abyss-accent-channel: 210 150 110;
+  --abyss-glass-tint: 50, 40, 36;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(230, 180, 140);
+  --jf-palette-secondary-mainChannel: 230 180 140;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

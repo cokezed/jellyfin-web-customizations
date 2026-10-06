@@ -1,0 +1,14 @@
+/* Abyss palette: sage (Sage green) */
+:root {
+  --abyss-accent: 130, 195, 150;
+  --abyss-accent-channel: 130 195 150;
+  --abyss-glass-tint: 36, 48, 42;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(100, 180, 140);
+  --jf-palette-secondary-mainChannel: 100 180 140;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}

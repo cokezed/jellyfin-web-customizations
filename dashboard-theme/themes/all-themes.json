@@ -1,0 +1,113 @@
+{
+  "defaultTheme": "rose",
+  "themes": [
+    {
+      "id": "stock",
+      "label": "Abyss stock",
+      "group": "Reference",
+      "aliases": ["stock", "abyss-stock", "near-white", "upstream", "original"],
+      "accent": [245, 245, 247],
+      "glassTint": [42, 42, 42],
+      "secondary": [245, 245, 247]
+    },
+    {
+      "id": "rose",
+      "label": "Rose orchid",
+      "group": "Pink & purple",
+      "aliases": ["rose", "orchid", "default", "plum"],
+      "accent": [215, 100, 190],
+      "glassTint": [50, 36, 58],
+      "secondary": [190, 120, 255]
+    },
+    {
+      "id": "lavender",
+      "label": "Lilac",
+      "group": "Pink & purple",
+      "aliases": ["lavender", "lilac", "wisteria"],
+      "accent": [200, 170, 225],
+      "glassTint": [48, 42, 52],
+      "secondary": [220, 195, 240]
+    },
+    {
+      "id": "midnight",
+      "label": "Royal purple",
+      "group": "Pink & purple",
+      "aliases": ["midnight", "dark-purple", "dark purple", "violet", "royal", "royal purple"],
+      "accent": [142, 96, 214],
+      "glassTint": [36, 30, 56],
+      "secondary": [178, 138, 235]
+    },
+    {
+      "id": "ocean",
+      "label": "Ocean blue",
+      "group": "Blue & ice",
+      "aliases": ["ocean", "blue", "sky"],
+      "accent": [100, 165, 210],
+      "glassTint": [32, 42, 55],
+      "secondary": [130, 200, 255]
+    },
+    {
+      "id": "frost",
+      "label": "Frost",
+      "group": "Blue & ice",
+      "aliases": ["frost", "slate", "steel"],
+      "accent": [165, 195, 220],
+      "glassTint": [40, 44, 52],
+      "secondary": [190, 210, 235]
+    },
+    {
+      "id": "sage",
+      "label": "Sage green",
+      "group": "Green",
+      "aliases": ["sage", "green"],
+      "accent": [130, 195, 150],
+      "glassTint": [36, 48, 42],
+      "secondary": [100, 180, 140]
+    },
+    {
+      "id": "jade",
+      "label": "Jade",
+      "group": "Green",
+      "aliases": ["jade", "sea-glass", "sea glass", "teal"],
+      "accent": [95, 170, 150],
+      "glassTint": [34, 44, 40],
+      "secondary": [120, 195, 175]
+    },
+    {
+      "id": "moss",
+      "label": "Moss",
+      "group": "Green",
+      "aliases": ["moss", "forest", "pine"],
+      "accent": [135, 188, 118],
+      "glassTint": [38, 50, 36],
+      "secondary": [155, 205, 125]
+    },
+    {
+      "id": "gold",
+      "label": "Soft gold",
+      "group": "Gold & warm",
+      "aliases": ["gold", "champagne"],
+      "accent": [220, 190, 130],
+      "glassTint": [52, 46, 38],
+      "secondary": [255, 220, 160]
+    },
+    {
+      "id": "honey",
+      "label": "Honey",
+      "group": "Gold & warm",
+      "aliases": ["honey", "amber", "warm"],
+      "accent": [215, 175, 110],
+      "glassTint": [50, 44, 34],
+      "secondary": [240, 200, 140]
+    },
+    {
+      "id": "copper",
+      "label": "Copper",
+      "group": "Gold & warm",
+      "aliases": ["copper", "bronze"],
+      "accent": [210, 150, 110],
+      "glassTint": [50, 40, 36],
+      "secondary": [230, 180, 140]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* Abyss palette: jade (Jade) */
+:root {
+  --abyss-accent: 95, 170, 150;
+  --abyss-accent-channel: 95 170 150;
+  --abyss-glass-tint: 34, 44, 40;
+}
+html[data-theme="dark"] {
+  --jf-palette-primary-main: rgb(var(--abyss-accent));
+  --jf-palette-primary-mainChannel: var(--abyss-accent-channel);
+  --jf-palette-secondary-main: rgb(120, 195, 175);
+  --jf-palette-secondary-mainChannel: 120 195 175;
+  --jf-palette-AppBar-defaultBg: rgba(var(--abyss-glass-tint), 0.92);
+  --jf-palette-AppBar-transparentBg: rgba(var(--abyss-glass-tint), 0.72);
+}
