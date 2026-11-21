@@ -24,6 +24,7 @@ Add one customization per pull request.
 | [collection-picker-speed/](collection-picker-speed/) | Faster Add to Collection dropdown (JS Injector) |
 | [collections-row/](collections-row/) | Collections a title belongs to, above More like this (JS Injector) |
 | [dashboard-theme/](dashboard-theme/) | Abyss-style accents on the admin Dashboard (JS Injector; Branding CSS is skipped there on 10.11+) |
+| [music-playlists-filter/](music-playlists-filter/) | Hide video playlists on Music → Playlists (JS Injector) |
 | [abyss/](abyss/) | Abyss theme imports, palettes, and accent overlays (CSS) |
 
 ## Requirements
